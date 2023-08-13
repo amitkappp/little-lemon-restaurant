@@ -29,3 +29,19 @@
 .item-price {
   color: var(--secondaryColor100);
 }
+
+.btn-container {
+  display: flex;
+  align-items: center;
+}
+
+span + img {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-container:hover span + img {
+  margin-left: 2rem;
+  cursor: pointer;
+}

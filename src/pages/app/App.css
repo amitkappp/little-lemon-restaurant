@@ -47,6 +47,16 @@ h4 {
   padding: 0 2rem;
 }
 
+.secondary-btn {
+  color: var(--secondaryColor900);
+  font-weight: 600;
+}
+
+.secondary-btn:hover {
+  cursor: pointer;
+  color: black;
+}
+
 .app-container {
   width: 100%;
   background-color: white;

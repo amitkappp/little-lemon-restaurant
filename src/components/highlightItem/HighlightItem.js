@@ -1,4 +1,5 @@
 import React from "react";
+import Scooter from "../../assets/scooter.svg";
 
 const HighlightItem = ({ data }) => {
   return (
@@ -12,7 +13,10 @@ const HighlightItem = ({ data }) => {
         <div style={{ height: ".5rem" }}></div>
         <p>{data.description}</p>
         <div style={{ height: "2rem" }}></div>
-        <div className="secondary-btn">Order a delivery</div>
+        <div className="btn-container">
+          <span className="secondary-btn">Order a delivery</span>
+          <img src={Scooter} alt="scooter" />
+        </div>
       </div>
     </div>
   );
