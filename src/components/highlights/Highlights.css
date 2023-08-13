@@ -1,7 +1,9 @@
 .highlights-section {
   flex: 1 1 auto;
-  margin: 2rem 0;
-  padding: 0 10rem;
+  margin-bottom: 8rem;
+}
+
+.highlights-layout {
   display: flex;
   flex-flow: column nowrap;
 }

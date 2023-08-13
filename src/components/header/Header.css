@@ -1,24 +1,36 @@
 .app-header {
   flex: 0 0 100px;
-  background-color: white;
+}
+
+.base-layout {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10rem;
 }
 
 .app-header nav {
   display: flex;
   flex-flow: row nowrap;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .app-header nav a {
   text-decoration: none;
   color: currentColor;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  border-radius: var(--borderRadius);
 }
 
 .app-header nav a:hover {
-  text-decoration: underline;
+  color: white;
+  background-color: black;
+}
+
+.app-header nav a.selected {
+  color: white;
+  background-color: black;
 }

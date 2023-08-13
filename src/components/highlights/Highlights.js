@@ -13,15 +13,19 @@ const firstItemData = {
 const Highlights = () => {
   return (
     <section className="highlights-section">
-      <section className="highlights-header">
-        <h1>This week specials!</h1>
-        <div className="primary-btn">Online Menu</div>
-      </section>
-      <section className="highlights-body">
-        <HighlightItem data={firstItemData} />
-        <HighlightItem data={firstItemData} />
-        <HighlightItem data={firstItemData} />
-      </section>
+      <div className="center-column">
+        <div className="highlights-layout">
+          <section className="highlights-header">
+            <h1>This week specials!</h1>
+            <div className="primary-btn">Online Menu</div>
+          </section>
+          <section className="highlights-body">
+            <HighlightItem data={firstItemData} />
+            <HighlightItem data={firstItemData} />
+            <HighlightItem data={firstItemData} />
+          </section>
+        </div>
+      </div>
     </section>
   );
 };

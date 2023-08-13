@@ -1,7 +1,10 @@
 .app-footer {
   flex: 0 0 auto;
+  background-color: var(--secondaryColor300);
+}
+
+.footer-layout {
   margin: 4rem 0;
-  padding: 0 10rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
