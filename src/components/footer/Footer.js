@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="app-footer">
       <section className="footer-section">
         <img src="" alt="logo" />
       </section>
       <section className="footer-section">
-        <h4>Doormat Navigation</h4>
+        <span>Doormat Navigation</span>
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Menu</a>
@@ -16,13 +16,13 @@ const Footer = () => {
         <a href="">Login</a>
       </section>
       <section className="footer-section">
-        <h4>Contact</h4>
+        <span>Contact</span>
         <a href="">Address</a>
         <a href="">Phone number</a>
         <a href="">Email</a>
       </section>
       <section className="footer-section">
-        <h4>Social media links</h4>
+        <span>Social media links</span>
         <a href="">Facebook</a>
         <a href="">Instagram</a>
         <a href="">Rest</a>

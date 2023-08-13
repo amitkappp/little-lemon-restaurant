@@ -1,0 +1,27 @@
+.app-footer {
+  flex: 0 0 auto;
+  margin: 4rem 0;
+  padding: 0 10rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer-section span {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: var(--secondaryColor900);
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}

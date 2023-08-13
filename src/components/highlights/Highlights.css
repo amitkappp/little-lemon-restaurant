@@ -1,0 +1,23 @@
+.highlights-section {
+  flex: 1 1 auto;
+  margin: 2rem 0;
+  padding: 0 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.highlights-header {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlights-body {
+  margin-top: 2rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 4rem;
+}

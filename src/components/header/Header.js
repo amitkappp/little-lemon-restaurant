@@ -3,7 +3,7 @@ import logo from "../../assets/Logo.svg";
 
 const Header = () => {
   return (
-    <header>
+    <header className="app-header">
       <img className="app-logo" src={logo}></img>
       <nav>
         <a href="/home">Home</a>
