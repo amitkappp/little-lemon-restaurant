@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImg from "../../assets/hero-img.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,9 @@ const HeroSection = () => {
               traditional recepies severed with a modern twist.
             </h4>
             <div style={{ height: "1rem" }}></div>
-            <div className="primary-btn">Reserve a Table</div>
+            <Link to="/reservations">
+              <div className="primary-btn">Reserve a Table</div>
+            </Link>
           </aside>
           <aside className="hero-image">
             <div className="img-container">
