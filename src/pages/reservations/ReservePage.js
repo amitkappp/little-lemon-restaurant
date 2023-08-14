@@ -1,10 +1,16 @@
 import React from "react";
+import ReservationForm from "../../components/ReservationForm";
+
+const reservePageStyle = {
+  display: "flex",
+  flexDirection: "column",
+};
 
 const ReservePage = () => {
   return (
-    <div>
-      <h1>Reservations Page</h1>
-    </div>
+    <section style={{ reservePageStyle }}>
+      <ReservationForm />
+    </section>
   );
 };
 

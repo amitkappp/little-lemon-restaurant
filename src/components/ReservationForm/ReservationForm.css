@@ -1,0 +1,40 @@
+.reservation-form {
+  flex: 1 1 auto;
+  margin-bottom: 8rem;
+}
+
+.reserve-layout {
+  padding: 2rem 0;
+}
+
+.reservation-form form {
+  width: 25%;
+  padding: 2rem 0;
+}
+
+.reservation-form form > * {
+  margin-bottom: 1rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-form form input[type="submit"] {
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.reservation-form form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.form-item.primary-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
