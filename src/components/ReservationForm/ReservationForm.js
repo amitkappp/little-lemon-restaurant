@@ -1,21 +1,31 @@
 import React, { useEffect, useState } from "react";
 
-const ReservationForm = () => {
+const ReservationForm = ({ date, avaiableTimes, dispatch, onFormSubmit }) => {
   const [reservation, setReservation] = useState({
-    date: "",
+    date: date,
     time: "",
     guests: 1,
-    occasion: "",
+    occasion: "Birthday",
   });
 
-  const avaiableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  useEffect(() => {
+    //console.log("Reservation:", reservation);
+  }, [reservation]);
 
   useEffect(() => {
-    console.log(reservation);
-  }, [reservation]);
+    setReservation({ ...reservation, time: avaiableTimes[0] });
+  }, [avaiableTimes]);
 
   const onChange = (e) => {
     setReservation({ ...reservation, [e.target.id]: e.target.value });
+    if (e.target.id === "date") {
+      dispatch({ type: "DATE_UPDATE", payload: e.target.value });
+    }
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    onFormSubmit(reservation);
   };
 
   return (
@@ -24,7 +34,7 @@ const ReservationForm = () => {
         <div className="reserve-layout">
           <h2>Reserve a Table</h2>
           <h4>Fill the following details to reserve a table:</h4>
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="form-item">
               <label htmlFor="res-date">Choose date</label>
               <input

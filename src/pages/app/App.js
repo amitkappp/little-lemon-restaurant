@@ -24,6 +24,11 @@ function App() {
           <Route exec path="/reservations" element={<ReservePage />} />
           <Route exec path="/order-online" element={<OrderOnlinePage />} />
           <Route exec path="/user-login" element={<LoginPage />} />
+          <Route
+            exec
+            path="/reservation-success"
+            element={<div>reservation-success</div>}
+          />
         </Routes>
       </main>
       <Footer />
