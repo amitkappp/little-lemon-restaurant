@@ -1,16 +1,34 @@
 import React, { useEffect, useState } from "react";
 
-const ReservationForm = ({ date, avaiableTimes, dispatch, onFormSubmit }) => {
+const ReservationForm = ({
+  date,
+  avaiableTimes,
+  dispatch,
+  onFormSubmit,
+  reservetionConfirmed,
+}) => {
   const [reservation, setReservation] = useState({
     date: date,
     time: "",
     guests: 1,
     occasion: "Birthday",
+    status: "pending",
   });
 
   useEffect(() => {
-    //console.log("Reservation:", reservation);
-  }, [reservation]);
+    if (reservetionConfirmed === "success") {
+      setReservation({
+        ...reservation,
+        status: `Your reservation for ${reservation.date} at ${reservation.time} is confirmed.`,
+      });
+    }
+    if (reservetionConfirmed === "failure") {
+      setReservation({
+        ...reservation,
+        status: "Sorry, your reservation could not be confirmed.Try again.",
+      });
+    }
+  }, [reservetionConfirmed]);
 
   useEffect(() => {
     setReservation({ ...reservation, time: avaiableTimes[0] });
@@ -81,6 +99,9 @@ const ReservationForm = ({ date, avaiableTimes, dispatch, onFormSubmit }) => {
               <input type="submit" value="Reserve Now"></input>
             </div>
           </form>
+          <aside className="form-feedback">
+            {reservation.status !== "pending" && <h4>{reservation.status}</h4>}
+          </aside>
         </div>
       </div>
     </section>

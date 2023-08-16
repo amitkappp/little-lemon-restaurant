@@ -30,8 +30,10 @@ const Header = () => {
               Menu
             </Link>
             <Link
-              to="/reservations"
-              className={currentPath === "/reservations" ? "selected" : ""}
+              to="/reservations/reserve"
+              className={
+                currentPath === "/reservations/reserve" ? "selected" : ""
+              }
             >
               Reservations
             </Link>
