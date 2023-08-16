@@ -16,7 +16,7 @@ const HeroSection = () => {
               traditional recepies severed with a modern twist.
             </h4>
             <div style={{ height: "1rem" }}></div>
-            <Link to="/reservations">
+            <Link to="/reservations/reserve">
               <div className="primary-btn">Reserve a Table</div>
             </Link>
           </aside>

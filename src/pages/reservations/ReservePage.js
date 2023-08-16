@@ -48,7 +48,7 @@ const ReservePage = () => {
   };
 
   return (
-    <section style={{ reservePageStyle }}>
+    <section className="reservation-page">
       <ReservationForm
         date={initDate}
         avaiableTimes={avaiableTimes}

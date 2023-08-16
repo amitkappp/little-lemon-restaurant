@@ -1,6 +1,11 @@
+.reservation-page {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .reservation-form {
-  flex: 1 1 auto;
-  margin-bottom: 8rem;
+  flex: 1 1 100%;
 }
 
 .reserve-layout {

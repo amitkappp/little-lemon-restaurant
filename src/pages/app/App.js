@@ -15,17 +15,15 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <main>
-        <Routes>
-          <Route exec path="/" element={<HomePage />} />
-          <Route exec path="/home" element={<HomePage />} />
-          <Route exec path="/about" element={<AboutPage />} />
-          <Route exec path="/menu" element={<MenuPage />} />
-          <Route exec path="/reservations/:params" element={<ReservePage />} />
-          <Route exec path="/order-online" element={<OrderOnlinePage />} />
-          <Route exec path="/user-login" element={<LoginPage />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route exec path="/" element={<HomePage />} />
+        <Route exec path="/home" element={<HomePage />} />
+        <Route exec path="/about" element={<AboutPage />} />
+        <Route exec path="/menu" element={<MenuPage />} />
+        <Route exec path="/reservations/:params" element={<ReservePage />} />
+        <Route exec path="/order-online" element={<OrderOnlinePage />} />
+        <Route exec path="/user-login" element={<LoginPage />} />
+      </Routes>
       <Footer />
     </div>
   );
